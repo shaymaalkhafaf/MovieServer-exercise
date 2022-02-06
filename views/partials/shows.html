@@ -1,0 +1,7 @@
+<!-- ${showsData.map(movie =>`
+<li><a href="${path}shows/${movie.Title}">${movie.Title}</a></li>
+` ).join("")} -->
+
+${shows ? `${showsData.map(movie =>`
+    <li><a href="${path}shows/${movie.Title}">${movie.Title}</a></li>
+    ` ).join("")}` : 'not maintained anymore'}
